@@ -1,0 +1,62 @@
+[
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPServer",
+        "importPath": "http.server",
+        "description": "http.server",
+        "isExtraImport": true,
+        "detail": "http.server",
+        "documentation": {}
+    },
+    {
+        "label": "BaseHTTPRequestHandler",
+        "importPath": "http.server",
+        "description": "http.server",
+        "isExtraImport": true,
+        "detail": "http.server",
+        "documentation": {}
+    },
+    {
+        "label": "zipcode_data",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def zipcode_data():\n    return 'Hello, ZipCode!'",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__)\n@app.route('/')\ndef zipcode_data():\n    return 'Hello, ZipCode!'",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "SimpleHTTPRequestHandler",
+        "kind": 6,
+        "importPath": "page",
+        "description": "page",
+        "peekOfCode": "class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):\n    def do_GET(self):\n        self.send_response(200)\n        self.end_headers()\n        self.wfile.write(b'Hello, World!')\nhttpd = HTTPServer(('localhost', 8000), SimpleHTTPRequestHandler)\nhttpd.serve_forever()",
+        "detail": "page",
+        "documentation": {}
+    },
+    {
+        "label": "httpd",
+        "kind": 5,
+        "importPath": "page",
+        "description": "page",
+        "peekOfCode": "httpd = HTTPServer(('localhost', 8000), SimpleHTTPRequestHandler)\nhttpd.serve_forever()",
+        "detail": "page",
+        "documentation": {}
+    }
+]
