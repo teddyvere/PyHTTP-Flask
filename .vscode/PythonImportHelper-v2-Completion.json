@@ -8,14 +8,6 @@
         "documentation": {}
     },
     {
-        "label": "Flask",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
         "label": "render_template",
         "importPath": "flask",
         "description": "flask",
@@ -48,48 +40,30 @@
         "documentation": {}
     },
     {
-        "label": "zipcode_data",
-        "kind": 2,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "def zipcode_data():\n    return 'Hello, ZipCode!'",
-        "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "app",
-        "kind": 5,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "app = Flask(__name__)\n@app.route('/')\ndef zipcode_data():\n    return 'Hello, ZipCode!'",
-        "detail": "app",
-        "documentation": {}
-    },
-    {
         "label": "index",
         "kind": 2,
-        "importPath": "name_email",
-        "description": "name_email",
+        "importPath": "app",
+        "description": "app",
         "peekOfCode": "def index():\n    return render_template('index.html')\n@app.route('/form', methods=['GET', 'POST'])\ndef form():\n    if request.method == 'POST':\n        name = request.form['name']\n        email = request.form['email']\n        return f'Name: {name}, Email: {email}'\n    # else: the request method is GET\n    return render_template('form.html')",
-        "detail": "name_email",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "form",
         "kind": 2,
-        "importPath": "name_email",
-        "description": "name_email",
-        "peekOfCode": "def form():\n    if request.method == 'POST':\n        name = request.form['name']\n        email = request.form['email']\n        return f'Name: {name}, Email: {email}'\n    # else: the request method is GET\n    return render_template('form.html')",
-        "detail": "name_email",
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def form():\n    if request.method == 'POST':\n        name = request.form['name']\n        email = request.form['email']\n        return f'Name: {name}, Email: {email}'\n    # else: the request method is GET\n    return render_template('form.html')\nif __name__ == '__main__':\n    app.run(port=8000)",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "app",
         "kind": 5,
-        "importPath": "name_email",
-        "description": "name_email",
+        "importPath": "app",
+        "description": "app",
         "peekOfCode": "app = Flask(__name__)\n@app.route('/')\ndef index():\n    return render_template('index.html')\n@app.route('/form', methods=['GET', 'POST'])\ndef form():\n    if request.method == 'POST':\n        name = request.form['name']\n        email = request.form['email']\n        return f'Name: {name}, Email: {email}'",
-        "detail": "name_email",
+        "detail": "app",
         "documentation": {}
     },
     {
